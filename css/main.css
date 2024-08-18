@@ -21,12 +21,6 @@ body section {
   padding: 60px 20px;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .header {
   background-color: #2e2e2e;
   padding: 20px 0;
@@ -108,6 +102,20 @@ body section {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 2px;
   text-align: center;
+}
+
+#portfolio {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+#portfolio img {
+  max-width: 650px;
+}
+#portfolio .portfolio-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

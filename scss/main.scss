@@ -23,11 +23,7 @@ body {
 }
 
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+
 
 .header {
     background-color: #2e2e2e;
@@ -124,4 +120,18 @@ body {
         }
     }
     
+}
+
+#portfolio{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    img{
+        max-width: 650px;
+    }
+    .portfolio-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
