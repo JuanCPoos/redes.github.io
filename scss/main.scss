@@ -7,7 +7,21 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
+    h2{
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    p{
+        font-size: 1.35rem;
+        font-weight: 300;    
+    }
+    section {
+        padding: 60px 20px;
+        
+    }
 }
+
 
 .container {
     max-width: 1200px;
@@ -16,7 +30,7 @@ body {
 }
 
 .header {
-    background-color: #2c3e50;
+    background-color: #2e2e2e;
     padding: 20px 0;
 
     .logo img {
@@ -26,37 +40,54 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    .navbar ul {
-        list-style: none;
-        display: flex;
-        gap: 20px;
+        ul {
+            background-color: #2e2e2e;
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            row-gap: 3px;
+        }
+        li{
+            
+            a {
+            
+                color: #fff;
+                text-decoration: none;
+                font-size: .7rem;
+            }
+        }
+        
+        .logo{
+            padding-left: 20px;
+        }
+        button{
+            border: none;
+        }
     }
     
-    .navbar a {
-        color: #fff;
-        text-decoration: none;
-    }
+    
+    
 }
 
 .banner {
-    background: url('../assets/images/banner.jpg') no-repeat center center/cover;
+    background: url('../assets/images/banner__home.jpg ') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 100px 20px;
+    .overlay{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .btn {
+        background-color: #e67e22;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
 }
 
-.banner .btn {
-    background-color: #e67e22;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
 
-.section {
-    padding: 60px 20px;
-}
+
 
 .section h2 {
     margin-bottom: 20px;
@@ -67,4 +98,30 @@ body {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+#services{
+    background-color: #e0dddd;
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        max-width:340px;
+        
+        h3{
+            padding: 7px;
+            text-align: center;
+            background-color: #34495e;
+            color: #fff;
+        }
+        .service-item{
+            background-color: #fff;
+            padding: 0 0 10px 0;
+            border-radius: 10px;
+            box-shadow: rgba(0,0,0,.6) 2px 2px 2px;
+            text-align: center;
+        }
+    }
+    
 }

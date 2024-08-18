@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+    .header{
+        padding: 5px 0;
+    }
     .navbar ul {
         display: none;
         flex-direction: column;
@@ -14,5 +17,9 @@
 
     .container {
         padding: 10px;
+    }
+
+    .cards{
+        flex-direction: column;
     }
 }
